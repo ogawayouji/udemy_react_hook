@@ -5,7 +5,7 @@ const initialState = {
   secondCounter: 10
 }
 const reducer = (state, action) => {
-  switch(action) {
+  switch(action.type) {// action -> action.type
     case 'increment1':
       // return state + 1
       return {...state, firstCounter: state.firstCounter + action.value}
@@ -32,7 +32,7 @@ function CounterReducer() {
       <button onClick={() => dispatch({type: 'decrement1', value: 1})}>decrement1</button>
       <button onClick={() => dispatch({type: 'increment2', value: 10})}>increment2</button>
       <button onClick={() => dispatch({type: 'decrement2', value: 10})}>decrement2</button>
-      <button onClick={() => dispatch({type: 'reset', value: 1})}>Reset</button>
+      <button onClick={() => dispatch({type: 'reset'})}>Reset</button>
       {/* <button onClick={() => dispatch('decrement')}>decrement</button>
       <button onClick={() => dispatch('reset')}>Reset</button> */}
     </div>
