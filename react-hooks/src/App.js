@@ -3,6 +3,11 @@ import './App.css';
 // import axios from 'axios'
 // import WrapComponent from './components/WrapComponent';
 import Check from './components/Check';
+import FocusInput from './components/FocusInput';
+import Count_ref from './components/Count_ref';
+import DocTitleUpdateOne from './components/DocTitleUpdateOne';
+import DocTitleUpdateTwo from './components/DocTitleUpdateTwo';
+import Form from './components/Form';
 // import ComponentA from './components/ComponentA';
 // import ComponentB from './components/ComponentB';
 // import ComponentC from './components/ComponentC';
@@ -102,7 +107,15 @@ function App() {
       <h2>{state.error ? state.error: null}</h2> */}
 
       {/* <WrapComponent /> */}
-      <Check />
+      {/* <Check /> */}
+      {/* <h1>useRef</h1> */}
+      {/* <FocusInput /> */}
+      {/* <Count_ref /> */}
+
+      <h1>Custom Hook</h1>
+      {/* <DocTitleUpdateOne />
+      <DocTitleUpdateTwo /> */}
+      <Form />
     </div>
   );
 }
